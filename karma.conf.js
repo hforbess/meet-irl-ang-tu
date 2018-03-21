@@ -19,7 +19,7 @@ module.exports = function(config) {
     './node_modules/angular-mocks/angular-mocks.js',                 // loads our modules for tests
     './app/services/users/users.js',                                 // our Users factory
     './app/app.js',                                                  // our angular app 
-       './app/services/users/users.spec.js'
+    './app/services/users/users.spec.js'
     ],
 
 
@@ -37,7 +37,7 @@ module.exports = function(config) {
     // test results reporter to use
     // possible values: 'dots', 'progress'
     // available reporters: https://npmjs.org/browse/keyword/karma-reporter
-    reporters: ['progress'],
+    reporters: ['spec'],
 
 
     // web server port
