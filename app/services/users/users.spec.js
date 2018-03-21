@@ -62,6 +62,9 @@ describe('Users factory', function() {
     it('should exist', function() {
       expect(Users.findById).toBeDefined();
     });
+    it('should should return an array', function() {
+      expect(userList).toContain( singleUser );
+    });
 
     it('should return one user object if it exists', function() {
       expect(Users.findById('2')).toEqual(singleUser);

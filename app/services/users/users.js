@@ -34,23 +34,15 @@
         twitter: 'dabill'
       }
     ];
+
     Users.all = function() {
       return userList;
     };
 
     Users.findById = function(id) {
-    var x; 
-    for ( x = 0; x < userList.length; x++ )
-   {
-     if ( userList[x].id == id ){
-       return userList[x];
-       break; 
-     }
-   
-   }
-   return undefined;
-}
-    
+      var obj = _.find(userList, function (obj) { return obj.id === id; });
+      return obj;
+    };
 
     return Users;
   });

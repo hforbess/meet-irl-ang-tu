@@ -1,5 +1,5 @@
 // Karma configuration
-// Generated on Fri Mar 16 2018 02:19:14 GMT+0000 (UTC)
+// Generated on Wed Jun 01 2016 17:37:40 GMT-0400 (EDT)
 
 module.exports = function(config) {
   config.set({
@@ -14,16 +14,18 @@ module.exports = function(config) {
 
 
     // list of files / patterns to load in the browser
-    files: [ './node_modules/angular/angular.js',                     // angular
-    './node_modules/angular-ui-router/release/angular-ui-router.js', // ui-router
-    './node_modules/angular-mocks/angular-mocks.js',                 // loads our modules for tests
-    './app/services/users/users.js',                                 // our Users factory
-    './app/app.js',                                                  // our angular app 
-    './app/services/users/users.spec.js'
+    files: [
+      './node_modules/angular/angular.js',
+      './node_modules/angular-ui-router/release/angular-ui-router.js',
+      './node_modules/angular-mocks/angular-mocks.js',
+      './app/services/users/users.js',
+      './node_modules/underscore/underscore.js' ,
+      './app/app.js',
+      './app/services/users/users.spec.js'
     ],
 
 
-    // list of files / patterns to exclude
+    // list of files to exclude
     exclude: [
     ],
 
@@ -64,7 +66,7 @@ module.exports = function(config) {
 
     // Continuous Integration mode
     // if true, Karma captures browsers, runs the tests and exits
-    singleRun: true,
+    singleRun: false,
 
     // Concurrency level
     // how many browser should be started simultaneous
